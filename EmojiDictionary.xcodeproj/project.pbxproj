@@ -64,19 +64,35 @@
 		18E8589023A95DC1009A02B5 /* EmojiDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				49A2BF5C284587F800C00AD1 /* Controllers */,
+				49A2BF5B284587CE00C00AD1 /* Models */,
 				18E8589F23A95DC2009A02B5 /* Info.plist */,
 				18E858A723A95F64009A02B5 /* Main.storyboard */,
 				18E8589123A95DC1009A02B5 /* AppDelegate.swift */,
 				18E8589323A95DC1009A02B5 /* SceneDelegate.swift */,
-				18E858A523A95EC7009A02B5 /* Emoji.swift */,
-				5A98BFD224CF8CB700EBFD72 /* EmojiCollectionViewController.swift */,
-				188F675B23AAC17B007E2064 /* AddEditEmojiTableViewController.swift */,
-				5A98BFD024CF8C4400EBFD72 /* EmojiCollectionViewCell.swift */,
-				4485A51924ED7DDC0051EF3D /* EmojiCollectionViewHeader.swift */,
 				18E8589A23A95DC2009A02B5 /* Assets.xcassets */,
 				18E8589C23A95DC2009A02B5 /* LaunchScreen.storyboard */,
 			);
 			path = EmojiDictionary;
+			sourceTree = "<group>";
+		};
+		49A2BF5B284587CE00C00AD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18E858A523A95EC7009A02B5 /* Emoji.swift */,
+				4485A51924ED7DDC0051EF3D /* EmojiCollectionViewHeader.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49A2BF5C284587F800C00AD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A98BFD224CF8CB700EBFD72 /* EmojiCollectionViewController.swift */,
+				188F675B23AAC17B007E2064 /* AddEditEmojiTableViewController.swift */,
+				5A98BFD024CF8C4400EBFD72 /* EmojiCollectionViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

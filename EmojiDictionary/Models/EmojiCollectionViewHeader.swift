@@ -3,6 +3,7 @@
 import UIKit
 
 class EmojiCollectionViewHeader: UICollectionReusableView {
+    //MARK: - Properties
     let titleLabel = UILabel()
     
     override init(frame: CGRect) {
