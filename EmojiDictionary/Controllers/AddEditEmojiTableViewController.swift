@@ -1,16 +1,15 @@
 import UIKit
 
 class AddEditEmojiTableViewController: UITableViewController {
-    
+//MARK: - Properties
     var emoji: Emoji?
-
+//MARK: - Outlets
     @IBOutlet var symbolTextField: UITextField!
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var descriptionTextField: UITextField!
     @IBOutlet var usageTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
-    
-    
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,16 +34,16 @@ class AddEditEmojiTableViewController: UITableViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+    //MARK: - Action
+    @IBAction func textEditingChanged(_ sender: UITextField) {
+            updateSaveButtonState()
+        }
+//MARK: - Methods
     func updateSaveButtonState() {
         let nameText = nameTextField.text ?? ""
         let descriptionText = descriptionTextField.text ?? ""
         let usageText = usageTextField.text ?? ""
         saveButton.isEnabled = containsSingleEmoji(symbolTextField) && !nameText.isEmpty && !descriptionText.isEmpty && !usageText.isEmpty
-    }
-    
-    @IBAction func textEditingChanged(_ sender: UITextField) {
-        updateSaveButtonState()
     }
     
     func containsSingleEmoji(_ textField: UITextField) -> Bool {
